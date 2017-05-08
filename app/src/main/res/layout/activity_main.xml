@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myz.measurelistview.MainActivity">
+   <Button
+       android:id="@+id/drawBitmap"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="draw"
+       android:text="画listView"/>
+   <ListView
+       android:id="@+id/listview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+   <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <ImageView
+          android:id="@+id/image"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone">
+      </ImageView>
+   </ScrollView>
+</LinearLayout>
